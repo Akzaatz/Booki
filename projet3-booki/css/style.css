@@ -442,9 +442,7 @@ h5 {
   .populaires-cards .card {
     width: 260px;
   }
-  #main-activites {
-    max-width: 1024px;
-  }
+
   .activites-cards img {
     width: 193px;
     height: 200px;
@@ -477,6 +475,7 @@ h5 {
 
   nav a {
     font-size: 0.9rem;
+    font-weight: 500;
   }
 
   nav li:hover:before {
@@ -490,17 +489,24 @@ h5 {
     text-align: left;
   }
   .intro h1 {
-    font-size: 1rem;
+    margin-right: 48px;
+    font-size: 1.3rem;
+    font-weight: bolder;
   }
   .intro p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 10px;
   }
+
   .search-container {
     width: 375px;
   }
   .search-button {
     width: 375px;
+    height: 45px;
   }
+
   #btn-submit {
     content: "icon";
     font-family: "Font Awesome 5 Free";
@@ -522,10 +528,12 @@ h5 {
   .filtres-up h2 {
     font-size: 1rem;
   }
-
+  .filtres-down-buttons {
+    margin-right: 548px;
+  }
   .filtres-down-buttons button {
-    width: 137px;
-    height: 45px;
+    width: 160px;
+    height: 40px;
     font-size: 0.8rem;
   }
   .filtres-down-buttons ul {
@@ -548,12 +556,20 @@ h5 {
   .ellipse11 {
     top: 39px;
   }
+  .filtres-infos {
+    margin-right: 30px;
+    padding: 30px;
+  }
+  .filtres-infos p {
+    font-size: 0.9rem;
+  }
   .icon-info i {
     top: 44px;
     left: 13px;
   }
 
   #main-hebergements {
+    margin: 0;
     width: 375px;
     display: flex;
     flex-direction: column-reverse;
@@ -578,5 +594,30 @@ h5 {
   }
   .populaires-cards .card {
     width: 95%;
+  }
+  .hebergements .card-title {
+    padding: 0;
+    margin: 0;
+  }
+  .hebergements-cards .card {
+    width: 110%;
+    height: 250px;
+  }
+  .main-activites {
+    width: 375px;
+  }
+  .activites-cards img {
+    width: 355px;
+  }
+  .activites-cards .card {
+    width: 355px;
+    height: auto;
+  }
+  .activites-cards .card {
+    margin: 20px 0;
+  }
+
+  footer {
+    width: 375px;
   }
 }
