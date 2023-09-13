@@ -1,4 +1,6 @@
 /****** General ***********/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
 @font-face {
   font-family: "Raleway";
   src: url(/fonts/Raleway-VariableFont_wght.ttf);
@@ -10,17 +12,34 @@
   font-family: "Raleway", sans-serif;
   list-style: none;
   font-size: 1rem;
+  border: none;
 }
+
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
   --black-bg-color: #060101;
   --grey-bg-color: #d9d9d9;
+  --white-bg-color: #fffdfd;
 }
 .fa-solid {
   color: var(--main-color);
 }
+.card img {
+  object-fit: cover;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+nav,
+.search-container,
+.filtres-container {
+  padding: 0 50px;
+  background: var(--white-bg-color);
+}
+
 nav {
   max-width: 1440px;
   min-height: 79px;
@@ -50,17 +69,13 @@ nav li {
 nav li:hover {
   color: var(--main-color);
 }
-nav li:hover:before {
+nav li:hover::before {
   content: "";
   width: 80%;
   height: 2px;
   position: absolute;
   background: var(--main-color);
-  transform: translateY(-5px);
-}
-body {
-  margin: 0 auto;
-  padding: 5px 40px;
+  transform: translateY(-17px);
 }
 
 .search-container {
@@ -74,7 +89,7 @@ body {
   margin: 35px 0;
 }
 .intro p {
-  padding: 10px 0;
+  padding: 0px 0;
 }
 h1 {
   font-family: "Raleway";
@@ -91,7 +106,7 @@ input {
   border: 0;
 }
 .button-icon {
-  width: 10%;
+  width: 13%;
   background: var(--main-bg-color);
   display: flex;
   flex-direction: column;
@@ -102,13 +117,13 @@ input {
 
 #ville {
   width: 60%;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 1rem;
   border: 1px solid var(--main-bg-color);
 }
 .search i {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: black;
 }
 
@@ -130,8 +145,14 @@ input {
   padding: 20px;
 }
 
+#btn-submit i {
+  display: none;
+  color: var(--white-bg-color);
+}
+
 .filtres-container {
   max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -166,6 +187,7 @@ input {
   align-items: center;
   width: 173px;
   height: 50px;
+  border: 1px solid;
   background: none;
   cursor: pointer;
   border-radius: 25px;
@@ -185,9 +207,10 @@ input {
 }
 
 .main-container {
+  background: var(--white-bg-color);
   max-width: 1440px;
   margin: 0 auto;
-  margin-bottom: 80px;
+  padding-bottom: 70px;
 }
 .in-container {
   margin: 0;
@@ -268,7 +291,10 @@ a {
   padding: 30px;
   box-sizing: border-box;
 }
-
+.hebergements,
+.populaires {
+  margin: 20px;
+}
 .hebergements-cards-up,
 .hebergements-cards-down {
   display: flex;
@@ -423,18 +449,18 @@ h5 {
 
 @media screen and (max-width: 1380px) {
   body {
-    max-width: 1024px;
+    width: 1024px;
   }
   #main-hebergements {
-    display: block;
+    display: inline-block;
+    width: 98%;
   }
+
   .hebergements,
   .populaires {
-    width: 100%;
+    width: 98%;
   }
-  .populaires {
-    margin-top: 50px;
-  }
+
   .populaires-cards {
     display: flex;
     justify-content: space-between;
@@ -464,64 +490,68 @@ h5 {
 @media screen and (max-width: 980px) {
   body {
     max-width: 375px;
-    margin: 0 auto;
     padding: 5px 15px;
   }
   nav {
-    margin-top: 10px;
     display: block;
     text-align: center;
+    padding: 0;
+  }
+  .logo {
+    padding: 10px 0;
   }
   nav ul {
-    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 15px;
   }
-
+  nav li {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
   nav a {
     font-size: 1rem;
     font-weight: 500;
   }
 
-  nav li:hover:before {
-    transform: translateY(20px);
+  nav li:hover::before {
+    transform: translateY(30px);
+    width: 100%;
+    justify-content: space-around;
+    left: -1px;
   }
-  .intro {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+  .search-container,
+  .filtres-container {
+    width: 100%;
+    padding: 10px 20px;
   }
   .intro h1 {
-    margin-right: 48px;
     font-size: 1.3rem;
     font-weight: bolder;
   }
   .intro p {
     font-size: 0.9rem;
     font-weight: 500;
-    line-height: 10px;
+    line-height: 20px;
   }
 
-  .search-container {
-    width: 375px;
-  }
   .search {
     margin: 15px 0;
   }
   .search-button {
-    width: 110%;
+    width: 140%;
     height: 45px;
   }
 
-  #btn-submit {
-    content: "icon" gddfgdfg;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 100px;
-    font-size: 54px;
-    color: red;
-    content: "\f002"; /* Code Unicode de l'icône Font Awesome "fa-magnifying-glass" */
-    text-indent: -9999px;
+  #btn-submit span {
+    display: none;
   }
-  .filtres-container {
-    margin-bottom: 0;
+
+  #btn-submit i {
+    display: flex;
+    font-size: 1rem;
   }
   .filtres {
     flex-direction: column;
@@ -540,14 +570,13 @@ h5 {
     font-size: 0.8rem;
   }
   .filtres-down-buttons ul {
-    width: 375px;
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "ec fa"
       "ro pts";
-    gap: 10px;
+    gap: 15px;
   }
   #ec {
     grid-area: ec;
@@ -570,24 +599,31 @@ h5 {
     top: 39px;
     left: 13px;
   }
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-  }
+
   .section-title {
     font-size: 1.3rem;
     font-weight: bold;
   }
 
+  .main-container {
+    display: inline-block;
+  }
   #main-hebergements {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
   .populaires,
   .populaires-cards,
   .hebergements-cards {
     border-radius: 0%;
+  }
+  .populaires {
+    margin-top: 10px;
+    padding: 20px 10px 30px;
+  }
+  .populaires-title i {
+    visibility: hidden;
   }
 
   .hebergements,
@@ -602,12 +638,9 @@ h5 {
   footer {
     flex-direction: column;
   }
-  .populaires {
-    margin-top: 0;
-    padding: 10px;
-  }
+
   .populaires-cards img {
-    width: 40%;
+    width: 35%;
     height: 115px;
     padding-bottom: 3px;
   }
@@ -618,7 +651,7 @@ h5 {
   }
 
   .populaires-cards .card-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0;
   }
   .populaires-cards p {
@@ -644,15 +677,15 @@ h5 {
     height: 210px;
   }
   .hebergements-cards .card-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0;
   }
   .hebergements-link p {
     font-size: 0.8rem;
   }
   #main-activites {
-    margin: 0 0 70px 0;
-    padding: 0;
+    margin: 0;
+    padding: 0 20px;
   }
   .activites-title h2 {
     margin: 45px 10px 0;
@@ -670,7 +703,7 @@ h5 {
 
   footer {
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
   }
   footer h5 {
     font-size: 1rem;
