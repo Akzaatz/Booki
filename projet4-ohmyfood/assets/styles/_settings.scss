@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Shrikhand-Regular";
+    src: url(../fonts/Shrikhand-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+$font1: inter-Shrikhand-Regular, sans-serif;
+$font2: Roboto-Regular, sans-serif;
+$black: #101010;
+$main: #f3f3f3;
+$pink:#fcc0ce;
+$green1:#99e2d0; 
+$green2: #008766;
+$blue1:#89C8FA;
+$blue2:#003A68;
+$purple:#9356DC;
+$gradient:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+
+
+$heart:"fa-regular fa-heart";
+$loc:"fa-solid fa-location-dot";
+$cutlury:"fa-solid fa-utensils";
+$handshake:"fa-solid fa-handshake-angle";
+$arrow:"fa-solid fa-arrow-left";
+$mobile:"fa-solid fa-arrow-left";
+$store:"fa-solid fa-store";
+$listul:"fa-solid fa-list-ul";
+
+
