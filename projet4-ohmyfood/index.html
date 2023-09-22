@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <html xmlns:og="http://ogp.me/ns#"></html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OhMyFood</title>
+    <title>OhMyFood, Commandez vos menus gastronomiques en ligne</title>
+    <meta
+      name="description"
+      content="Ohmyfood est une entreprise de commande de repas en ligne. Notre concept permet aux
+    utilisateurs de composer leur propre menu et de réduire leur temps d’attente dans les
+    restaurants, car leur menu est préparé à l’avance. Plus de perte de temps à consulter la
+    carte ! Nous proposons à nos clients les menus de restaurants gastronomiques."
+    />
+    <link rel="shortcut icon" href="./assets/img/logo/ic-plate.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -13,5 +22,122 @@
     />
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="logo">
+          <h1>Ohmyfood</h1>
+        </div>
+
+        <div class="loc">
+          <p>Paris, Belleville</p>
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+      </header>
+      <section class="search-section">
+        <div class="main-title">
+          <h2>Réservez le menu qui vous convient</h2>
+        </div>
+
+        <div>
+          <p>
+            Découvrez des restaurants d'exeption, sélectionnés par nos soins.
+          </p>
+        </div>
+        <div class="search-button">
+          <button>Explorer nos restaurants</button>
+        </div>
+      </section>
+      <section class="choose-section">
+        <h4>Fonctionnement</h4>
+        <nav>
+          <div class="choose-resto">
+            <p>
+              <i class="fa-solid fa-mobile-screen-button"></i>Choisissez un
+              restaurant
+            </p>
+          </div>
+          <div class="choose-menu">
+            <p><i class="fa-solid fa-list-ul"></i>Composez votre menu</p>
+          </div>
+          <div class="choose-test">
+            <p>
+              <i class="fa-solid fa-mobile-screen-button"></i>Dégustez au
+              restaurant
+            </p>
+          </div>
+        </nav>
+      </section>
+      <section class="restaurants-section">
+        <h5>Restaurants</h5>
+        <div class="cards-container">
+          <div class="card-content" id="palette-du-gout">
+            <div class="card-txt">
+              <h3 class="card-title">La palette du goût</h3>
+              <p class="card-subtitle">
+                Ménilmontant<span class="heart">
+                  <i class="fa-regular fa-heart"></i
+                ></span>
+              </p>
+            </div>
+          </div>
+          <div class="card-content" id="La-note-enchantee">
+            <div class="card-txt">
+              <h3 class="card-title">La note enchantée</h3>
+              <p class="card-subtitle">
+                Charonne<span class="heart">
+                  <i class="fa-regular fa-heart"></i
+                ></span>
+              </p>
+            </div>
+          </div>
+          <div class="card-content" id="a-la-francaise">
+            <div class="card-txt">
+              <h3 class="card-title">À la française</h3>
+              <p class="card-subtitle">
+                Cité Rouge<span class="heart">
+                  <i class="fa-regular fa-heart"></i
+                ></span>
+              </p>
+            </div>
+          </div>
+          <div class="card-content" id="delice-des-sens">
+            <div class="card-txt">
+              <h3 class="card-title">Le délice des sens</h3>
+              <p class="card-subtitle">
+                Folie Méricourt<span class="heart">
+                  <i class="fa-regular fa-heart"></i
+                ></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="partnership">
+          <ul>
+            <li>
+              <p>
+                <i class="fa-solid fa-utensils"></i>
+                Proposer un restaurant
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fa-solid fa-handshake-angle"></i>
+                Devenir partenaire
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <ul>
+            <li>Mentions légales</li>
+            <li>Contacts</li>
+          </ul>
+        </div>
+        <h6>Ohmyfood</h6>
+      </footer>
+    </div>
+  </body>
 </html>

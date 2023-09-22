@@ -1,8 +1,95 @@
 @font-face {
-  font-family: "Shrikhand-Regular";
+  font-family: "Shrikhand";
   src: url(../fonts/Shrikhand-Regular.ttf);
 }
 @font-face {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  font-family: Roboto-Medium;
+  font-size: 1rem;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+header {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 73px 50px;
+}
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header h1 {
+  font-family: Shrikhand;
+  font-size: 1.875rem;
+}
+header .loc {
+  background: #ebebea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+header .loc i {
+  position: absolute;
+  left: 110px;
+}
+
+.search-section {
+  background: #f6f6f6;
+  padding: 40px;
+}
+.search-section h2 {
+  padding-bottom: 15px;
+  font-family: Roboto-Bold;
+  font-size: 1.5rem;
+}
+.search-section p {
+  font-family: Roboto-light;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=index.css.map */
