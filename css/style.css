@@ -27,8 +27,6 @@
 }
 
 body {
-  overflow-x: hidden;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -370,7 +368,7 @@ footer {
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 20px;
-  padding-right: 300px;
+
   display: flex;
   justify-content: space-between;
 }
@@ -398,9 +396,6 @@ h5 {
   @media (max-width: 1024px) {*/
 
 @media screen and (max-width: 1024px) {
-  .main-container {
-    max-width: 1024px;
-  }
   #main-hebergements {
     display: inline-block;
     width: 100%;
@@ -446,9 +441,6 @@ h5 {
   .activites-cards .card {
     width: 100%;
   }
-  footer {
-    padding-right: 110px;
-  }
 }
 
 /* Small devices (phones, less than 768px) 
@@ -457,7 +449,6 @@ h5 {
 
 @media screen and (max-width: 768px) {
   .main-container {
-    max-width: 765px;
     padding: 0;
   }
   nav {
@@ -526,7 +517,6 @@ h5 {
     margin: 15px 0;
   }
   .search-button {
-    width: 130%;
     height: 40px;
   }
 
@@ -681,6 +671,8 @@ h5 {
     flex-direction: column;
   }
   footer {
+    display: flex;
+    justify-content: space-around;
     margin: 0;
     padding: 0 20px;
   }
