@@ -13,7 +13,18 @@ p{
     font-size: 1.1rem;
     padding-bottom: 10px ;
 }
-.search-button{
+button{
+cursor: pointer;
+border: none;
+background: $gradient;
+font-family: $font4;
+color:white ;
+width:218px ;
+height: 50px;
+border-radius: 25px;
+margin: 20px 0;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
 
 }
 }
